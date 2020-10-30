@@ -36,18 +36,22 @@
 
 .ckin-play:before {
   content: "\ea1c";
+  cursor: pointer;
 }
 
 .ckin-pause:before {
   content: "\ea1d";
+  cursor: pointer;
 }
 
 .ckin-stop:before {
   content: "\ea1e";
+  cursor: pointer;
 }
 
 .ckin-backward:before {
   content: "\ea1f";
+  cursor: pointer;
 }
 
 .ckin-forward:before {

@@ -1,25 +1,4 @@
 
-$('.carousel').slick({
-	dots: false,
-	infinite: true,
-	speed: 300,
-	slidesToShow: 1,
-	prevArrow:'.switch',
-	
-	margin:40,
-	cssEase: 'linear',
-	fade: true,
-	responsive: [
-		{
-				breakpoint:576,
-				settings: {
-					slidesToShow:1,
-					slidesToScroll:1,
-					adaptiveHeight:true,
-				}
-			},
-		]
-  });
 
 
   $('.test-items').on("init",function(event, slick){
@@ -36,13 +15,14 @@ $('.test-items')
 
 $(".test-items").slick({
 	dots:false,
-	slidesToShow:2,
-	slidesToScroll: 2,
+	slidesToShow:1,
+	slidesToScroll:1,
 	autoplay:false,
-	
+	fade:true,
+	speed: 2000,
 	autoplaySpeed: 2000,
-    prevArrow: $('.next'),
-	nextArrow: $('.prev'),
+    prevArrow: $('.prev'),
+	nextArrow: $('.next'),
 	
 	responsive: [
     {
@@ -82,39 +62,10 @@ $(".test-items").slick({
 	]
 });
 
-// $('.test-items').on('init afterChange', function(event, slick, currentSlide){
-//     let total = $('.test-items .item').length;
-//     var first = $('.slick-active:first > div:first').get(0);
-//     var last = $('.slick-active:last > div:last').get(0);
-//   if($(last).html() == '')
-//     last = $('.slick-active:last > div:not(:empty)').get(0);
-//     let start,end;
-//     $('.slick-slide > div').each(function(i,v){
-//         if(first === $(v).get(0)) {
-//             start = i+1;
-//         } 
-//         if(last === $(v).get(0)) {
-//             end = i++;
-//         }
-//     });
-//   $('.results').html(` ${start} <span> </span> ${end} `);
-// })
-
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
-
-
-
-
 $('.logo').click(function(){
-    $('nav ul.nav').toggleClass('change');
+	$('nav ul.nav').toggleClass('change');
+	$('#svg1').toggleClass('changed');
+	$('.menu-img').toggleClass('d-none');
    
 });
 
@@ -140,9 +91,6 @@ $('a.carousel').click(function (e) {
 // 	$('.glyphicon-play-circle').show();
 // 	$('.glyphicon-play-pause').hide();
 // }
-
-
-
 var top0 = $('.heroe').offset().top;
 var top1 = $('#about').offset().top;
 var top2 = $('#service').offset().top;
