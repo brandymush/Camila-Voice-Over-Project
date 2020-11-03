@@ -108,7 +108,7 @@ nav.nav{z-index: 99;justify-content: space-between;align-items: center;width: 10
        p:first-of-type{font-size:12px;display:flex;align-items: center;
        &::after{content: '';width:100px;height:2px;background-color:#DDA35D;margin-left:60px;}
             }
-      h6{white-space:pre-line;line-height:23px;padding-top: 30px;}
+      h6{white-space:pre-line;line-height:23px;padding-top: 30px;font-size:32px;font-family:'salo';line-height:38px;}
       p.last{font-size:16px;padding-top:30.2px;white-space: pre-line;line-height:26px;}
       }
       .heroe-img{position: relative;display:flex;justify-content:center;align-items: center;width:560px;height:560px;;
@@ -208,7 +208,7 @@ p.next-prev{right:5%;}
 
 
 
- .work{padding:160px 60px;
+ .work{padding:110px 60px;
    .gallery{display: flex;justify-content:space-between;
      img{height: 440px;width:177px;margin-right:18px;object-fit: cover;
         &:nth-of-type(2),&:nth-of-type(4){position: relative;top:49px;}
@@ -549,6 +549,7 @@ footer{background:#3B3920;padding:100px 0;
   .heroe{flex-direction: column;height:100%;padding:40px;padding-bottom: 60px;
     .heroe-text{
       h1{font-size:21px;}
+      h6{font-size: 18px;}
       p{white-space: normal !important;}
        p:first-of-type{font-size:12px;
          &:after{width: 60px;margin-left:30px;}
