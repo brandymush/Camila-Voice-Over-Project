@@ -1,34 +1,61 @@
 @font-face {
-    font-family: 'regular';
-    src: url('a1899b771c56ccf1a39ca970450becd0.woff2') format('woff2'),
-        url('a1899b771c56ccf1a39ca970450becd0.woff') format('woff');
+    font-family: 'Salome Deco';
+    src: url('Salome-Deco.woff2') format('woff2'),
+        url('Salome-Deco.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'salor';
+    src: url('Salome-Italic_0_wt.woff2') format('woff2'),
+        url('Salome-Italic_0_wt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'salo';
-    src: url('6bd998fea910812504d21d6ac72f9433.woff2') format('woff2'),
-        url('6bd998fea910812504d21d6ac72f9433.woff') format('woff');
+    src: url('SalomeFine-Italic_0_wt.woff2') format('woff2'),
+        url('SalomeFine-Italic_0_wt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Salome Fine';
+    src: url('Salome-Fine.woff2') format('woff2'),
+        url('Salome-Fine.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'normal';
-    src: url('de6f06a52fe7b34ed2ae7b54ac18401c.woff2') format('woff2'),
-        url('de6f06a52fe7b34ed2ae7b54ac18401c.woff') format('woff');
+    font-family: 'Salome Stencil';
+    src: url('SalomeStencil-Italic_0_wt.woff2') format('woff2'),
+        url('SalomeStencil-Italic_0_wt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Salome Stencil';
+    src: url('Salome-Stencil.woff2') format('woff2'),
+        url('Salome-Stencil.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'salomeregular';
-    src: url('salomeregular.woff2') format('woff2'),
-        url('salomeregular.woff') format('woff');
+    font-family: 'Salome';
+    src: url('Salome.woff2') format('woff2'),
+        url('Salome.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

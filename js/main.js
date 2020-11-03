@@ -11,7 +11,9 @@ $('.test-items')
 		$('.slider-count #current').html(currentSlide+1);
 	});
 
-
+	$.each($('audio'), function () {
+		$(this).stop();
+	});
 
 $(".test-items").slick({
 	dots:false,
@@ -30,7 +32,8 @@ $(".test-items").slick({
 			settings: {
 				slidesToShow:1,
 				slidesToScroll:1,
-				adaptiveHeight:true,
+				fade:false,
+				adaptiveHeight:false,
 			}
 		},
     {
@@ -38,7 +41,9 @@ $(".test-items").slick({
 			settings: {
 				slidesToShow:1,
 				slidesToScroll:1,
-				adaptiveHeight:true,
+				fade:false,
+				
+				
 			}
 		},
 		{
@@ -64,7 +69,7 @@ $(".test-items").slick({
 
 $('.logo').click(function(){
 	$('nav ul.nav').toggleClass('change');
-	$('#svg1').toggleClass('changed');
+	$('#harmburger').toggleClass('changed');
 	$('.menu-img').toggleClass('d-none');
    
 });

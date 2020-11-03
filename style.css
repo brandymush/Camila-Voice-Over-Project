@@ -70,19 +70,19 @@ p {
 }
 
 ::-webkit-input-placeholder {
-  color: white;
+  color: #e3deca;
 }
 
 :-ms-input-placeholder {
-  color: white;
+  color: #e3deca;
 }
 
 ::-ms-input-placeholder {
-  color: white;
+  color: #e3deca;
 }
 
 ::placeholder {
-  color: white;
+  color: #e3deca;
 }
 
 nav.nav {
@@ -115,24 +115,69 @@ nav.nav .logo {
 
 nav.nav .logo p {
   padding-right: 6px;
-  color: #fff;
+  color: #e3deca;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
   font-family: 'salo';
   font-size: 22px;
 }
 
-nav.nav .logo #svg1 {
-  display: none;
-  height: 40px;
+nav.nav .logo #harmburger {
+  height: 30px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10px;
 }
 
-nav.nav .logo #svg1 svg {
-  height: 90px;
+nav.nav .logo #harmburger span {
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #e3deca;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+nav.nav .logo #harmburger.changed span {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+nav.nav .logo #harmburger.changed span:nth-of-type(3) {
+  opacity: 0;
+  display: none;
+}
+
+nav.nav .logo #harmburger.changed span:nth-of-type(1) {
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  -webkit-transform-origin: 44px;
+          transform-origin: 44px;
+}
+
+nav.nav .logo #harmburger.changed span:nth-of-type(2) {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transform-origin: 44px;
+          transform-origin: 44px;
 }
 
 nav.nav .logo:hover p {
   color: #572D14;
+}
+
+nav.nav .logo:hover #harmburger span {
+  background-color: #572D14;
 }
 
 nav.nav ul {
@@ -154,6 +199,7 @@ nav.nav ul {
           align-items: center;
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
+  z-index: 99;
 }
 
 nav.nav ul img {
@@ -170,11 +216,13 @@ nav.nav ul li {
 
 nav.nav ul li a {
   font-size: 40px;
-  color: #fff;
+  color: #e3deca;
   text-decoration: none;
   font-family: "regular";
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 nav.nav ul li a:hover {
@@ -208,7 +256,7 @@ ul.change {
           align-items: center;
   background-image: -webkit-gradient(linear, right top, left top, from(#d59b62c2), to(#AB6333));
   background-image: linear-gradient(270deg, #d59b62c2 0%, #AB6333 100%);
-  color: #fff;
+  color: #e3deca;
   height: 765px;
   position: relative;
   -ms-flex-pack: distribute;
@@ -217,7 +265,7 @@ ul.change {
 
 .heroe .heroe-text h1 {
   font-size: 60px;
-  color: #fff;
+  color: #e3deca;
   padding-bottom: 28px;
 }
 
@@ -281,17 +329,21 @@ ul.change {
 
 .heroe .icons {
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   right: 100px;
 }
 
 .heroe .icons a {
   margin-right: 20px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .heroe .icons a i {
   font-size: 30px;
-  color: #fff;
+  color: #e3deca;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .heroe .icons a:hover i {
@@ -410,7 +462,7 @@ ul.change {
 
 .about .right .experience h2 {
   font-size: 22px;
-  color: #fff;
+  color: #e3deca;
   padding-bottom: 21px;
   text-align: left;
 }
@@ -423,7 +475,7 @@ ul.change {
 .about .right .experience ul li {
   font-size: 16px;
   padding-bottom: 8px;
-  color: #fff;
+  color: #e3deca;
   list-style: circle;
 }
 
@@ -633,7 +685,7 @@ audio {
   text-decoration: none;
   background-color: #572D14;
   height: 70px;
-  color: #fff;
+  color: #e3deca;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -643,7 +695,7 @@ audio {
 }
 
 .work .hire a:hover {
-  color: #fff;
+  color: #e3deca;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   cursor: pointer;
@@ -741,12 +793,12 @@ section.demos .right .top img {
 }
 
 section.demos .right .top p {
-  color: #fff;
+  color: #e3deca;
 }
 
 section.demos .right h5 {
   font-size: 36px;
-  color: #fff;
+  color: #e3deca;
   padding-bottom: 50px;
   font-family: 'salo';
 }
@@ -830,7 +882,7 @@ section.demos .right ul li button.active {
 
 section.demos .right ul li button:hover {
   background-color: #572D14;
-  color: #fff;
+  color: #e3deca;
 }
 
 section.demos .right ul li img {
@@ -870,7 +922,7 @@ section.demos .left li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+  color: #e3deca;
   font-family: 'light';
 }
 
@@ -928,14 +980,14 @@ section.demos .left .demo-list__item p {
 }
 
 section.demos .left .demo-list__item button {
-  color: #fff;
+  color: #e3deca;
   outline: none;
 }
 
 .testimony {
   padding: 66px 70px;
   background-color: #AB6333;
-  color: #fff;
+  color: #e3deca;
   overflow-x: hidden;
 }
 
@@ -987,13 +1039,13 @@ section.demos .left .demo-list__item button {
   font-size: 14px;
   padding-left: 12px;
   padding-bottom: 0;
-  color: #fff;
+  color: #e3deca;
 }
 
 .testimony .item .person .content h3 {
   white-space: pre-line;
   padding-bottom: 70px;
-  color: #fff;
+  color: #e3deca;
   font-size: 30px;
 }
 
@@ -1012,7 +1064,7 @@ section.demos .left .demo-list__item button {
   padding-bottom: 14px;
   font-size: 16px;
   line-height: 30px;
-  color: #fff;
+  color: #e3deca;
 }
 
 .testimony .item .person .test-icons {
@@ -1059,7 +1111,7 @@ section.demos .left .demo-list__item button {
 .testimony .item .person .test-icons .project p {
   font-size: 18px;
   padding-bottom: 10px;
-  color: #fff;
+  color: #e3deca;
   white-space: pre-line;
   text-transform: uppercase;
   line-height: 30px;
@@ -1104,7 +1156,7 @@ section.demos .left .demo-list__item button {
           justify-content: flex-start;
   cursor: pointer;
   font-size: 20px;
-  color: #fff;
+  color: #e3deca;
   text-transform: capitalize;
   letter-spacing: .2em;
   -webkit-box-align: center;
@@ -1122,7 +1174,7 @@ section.demos .left .demo-list__item button {
   text-align: center;
   width: 27%;
   padding-top: 10px;
-  color: #fff;
+  color: #e3deca;
   font-size: 20px;
   margin-left: auto;
   display: -webkit-box;
@@ -1160,14 +1212,14 @@ section.demos .left .demo-list__item button {
   display: block;
   height: 2px;
   width: 100px;
-  background-color: #fff;
+  background-color: #e3deca;
   margin: 0 10px;
 }
 
 body > section.testimony > div > div.owl-nav {
   width: 150px;
   margin-left: auto;
-  color: #fff;
+  color: #e3deca;
   margin-top: 18px;
 }
 
@@ -1176,7 +1228,7 @@ body > section.testimony > div > div.owl-nav button {
   margin-right: 0px;
   letter-spacing: 5px;
   font-size: 14px;
-  color: #fff;
+  color: #e3deca;
 }
 
 .ambition {
@@ -1216,20 +1268,23 @@ footer .contact img {
 }
 
 footer .contact p {
-  font-size: 15px;
+  font-size: 20px;
   padding: 20px 0;
-  color: #fff;
+  color: #e3deca;
+  text-transform: uppercase;
 }
 
 footer .contact h6 {
   padding-bottom: 30px;
-  color: #fff;
+  color: #e3deca;
 }
 
 footer .contact a {
-  color: #fff;
+  color: #e3deca;
   padding-bottom: 30px;
   text-decoration: none;
+  font-family: 'salo';
+  font-size: 24px;
 }
 
 footer .contact a:hover {
@@ -1252,6 +1307,8 @@ footer .contact .icons a {
 
 footer .contact .icons a i {
   font-size: 25px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 footer .contact .icons a:hover i {
@@ -1275,13 +1332,13 @@ footer .form-part .top img {
 footer .form-part .top p {
   font-size: 14px;
   padding-left: 15px;
-  color: #fff;
+  color: #e3deca;
 }
 
 footer .form-part h3 {
   white-space: pre-line;
   font-size: 24px;
-  color: #fff;
+  color: #e3deca;
   line-height: 40px;
   padding-bottom: 64px;
 }
@@ -1301,7 +1358,7 @@ footer form input {
   background-color: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #e3deca;
   padding-bottom: 40px;
   margin-bottom: 30px;
   text-transform: uppercase;
@@ -1313,7 +1370,7 @@ footer form textarea {
   outline: none;
   height: 80px;
   margin-bottom: 64px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #e3deca;
   text-transform: uppercase;
 }
 
@@ -1323,17 +1380,19 @@ footer form button {
   border: none;
   margin-left: auto;
   font-size: 25px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   outline: none;
+  font-family: 'salo';
+  background-color: #E3DECA;
+  color: #3B3920;
 }
 
 footer form button:hover {
-  background-image: linear-gradient(179deg, #8e7445 5%, #3b3920 95%);
-  color: #fff;
+  color: #D5A266;
 }
 
 footer a.top {
-  background-color: #AB6333;
+  background-color: #e3deca;
   height: 50px;
   width: 50px;
   display: -webkit-box;
@@ -1348,19 +1407,20 @@ footer a.top {
           justify-content: center;
   margin: auto;
   text-decoration: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 footer a.top i {
-  color: #572D14;
+  color: #3B3920;
   font-size: 40px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 footer a.top:hover {
-  background-color: #572D14;
-}
-
-footer a.top:hover i {
-  color: #AB6333;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #menu > div > ul > li.demo-list__item > div:hover .ckin__controls {
@@ -1396,7 +1456,7 @@ footer a.top:hover i {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #fff;
+  color: #e3deca;
   border-radius: 5px;
   font-size: 13px;
 }
@@ -1575,7 +1635,7 @@ footer {
 }
 
 .svg1 {
-  fill: #fff;
+  fill: #e3deca;
   stroke-width: 2;
   width: 50%;
   height: 100%;
@@ -1604,6 +1664,9 @@ footer {
 }
 
 @media (max-width: 320px) {
+  body .song-main-info {
+    font-size: 10px !important;
+  }
   body > nav > div > p {
     font-size: 13px !important;
   }
@@ -1631,7 +1694,7 @@ footer {
     font-size: 20px;
   }
   .song-main-info {
-    font-size: .7rem !important;
+    font-size: 14px !important;
   }
   ul.change {
     display: -webkit-box !important;
@@ -1652,6 +1715,9 @@ footer {
   }
   .heroe .heroe-text h1 {
     font-size: 21px;
+  }
+  .heroe .heroe-text p {
+    white-space: normal !important;
   }
   .heroe .heroe-text p:first-of-type {
     font-size: 12px;
@@ -1750,7 +1816,7 @@ footer {
     margin-right: 12px;
   }
   .work .hire .top p {
-    font-size: 8px;
+    font-size: 12px;
     padding: 0;
   }
   .work .hire h2 {
@@ -1801,6 +1867,7 @@ footer {
   }
   .ambition p {
     font-size: 21px;
+    line-height: normal;
   }
   .ambition h2 {
     white-space: space auto;
@@ -1978,7 +2045,7 @@ footer {
     font-size: 12px;
   }
   #audio-player #controls .right span {
-    color: #fff;
+    color: #e3deca;
     font-size: 12px;
   }
   #audio-player #controls .right img {
@@ -1999,7 +2066,7 @@ footer {
   }
   body nav.nav .logo p {
     padding-right: 6px;
-    color: #fff;
+    color: #e3deca;
   }
   body nav.nav .logo img {
     height: 30px;
@@ -2246,6 +2313,7 @@ footer {
   }
   .ambition p {
     font-size: 24px;
+    line-height: normal;
   }
   .ambition h2 {
     font-size: 20px;
@@ -2355,7 +2423,7 @@ footer {
     font-size: 12px;
   }
   #audio-player #controls .right span {
-    color: #fff;
+    color: #e3deca;
     font-size: 12px;
   }
   #audio-player #controls .right img {
@@ -2654,6 +2722,18 @@ footer {
     position: absolute;
     bottom: -51px;
     right: 30%;
+  }
+  #about > div > div > div.col-md-4 > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 /*# sourceMappingURL=style.css.map */

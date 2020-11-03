@@ -552,11 +552,7 @@ var play_button = $('li.active .fa');
 var time = $("li.active .time");
 var mute_button = $('li.active .mute');
 
-
-
-
-
-    })
+ })
 
     	  
 
